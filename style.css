@@ -6,6 +6,7 @@ body {
 }
 nav {
   border-radius: 0 0 1.5rem 0;
+  display: inline;
 }
 .container-fluid {
   position: relative;
