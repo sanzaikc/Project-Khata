@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand " href="#"
+          ><h1 pl-2">
+            <i class="far fa-address-book">
+              Khata<sup><small>&trade;</small></sup>
+            </i>
+          </h1></a>
+        <!-- DropDown -->
+        <div class="nav-item dropdown">
+          <p onclick="myFunction()" class="dropbtn">Welcome! John Doe</p>
+          <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+          </div>
+      </div>
+      </nav>
+
+      <!-- After NavBar, Remaining Body -->
+      <div class="wrapper d-flex col-10.mx-auto col-lg-12">
+        <div class="sideMenu ">
+          <!-- Profile Picture -->
+          <div class="profile-container">
+            <img
+              class="img-circle img-responsive"
+              src="peter-griffin-face-png.png"
+            />
+            <div class="badgeContainer">
+              <span class="badge badge-danger text-center">Admin</span>
+            </div>
+            <!-- <div class="userName">Sanjay Khatri</div> -->
+          </div>
+          <!-- Navigation Items -->
+          <ul class="navbar-nav">
+            <li class="nav-item" id="defaultOpen"  onclick="openTab(event,'DashBoard')">
+              <a href="" class="nav-link "
+                ><i class="fas fa-tachometer-alt sideMenuIcon"></i
+                ><span class="text">Dashboard</span></a
+              >
+            </li>
+            <li class="nav-item"  onclick="openTab(event,'Customers')">
+              <a href="" class="nav-link"
+                ><i class="fas fa-user sideMenuIcon"></i
+                ><span class="text">Customers</span></a
+              >
+            </li>
+            <li class="nav-item" onclick="openTab(event,'Sales')">
+              <a href="" class="nav-link"
+                ><i class="fas fa-chart-line sideMenuIcon"></i
+                ><span class="text">Sales</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Main Contents lies here -->
+        <div class="mainContent">
+          <!-- Content for DashBoard -->
+          <div class="tabContent" id='DashBoard'>
+            <h4 class="text-secondary">Overview</h4>
+            <hr />
+            <div class="col-lg-12  pt-2">
+              <div class="row pt-4">
+                <div class="col-lg-4 col-12  mb-3">
+                  <div class="customCard text-center">
+                    <span class="display-4"
+                      ><i class="fas fa-users text-info"></i> 15</span
+                    >
+                    <hr />
+                    <h4 class="text-info">Total Customers</h4>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12  mb-3">
+                  <div class="customCard text-center">
+                    <span class="display-4"
+                      ><i class="fas fa-dollar-sign text-success"></i>
+                      1500</span
+                    >
+                    <hr />
+                    <h4 class="text-success">Total Credit</h4>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-12  mb-3">
+                  <div class=" customCard text-center">
+                    <span class="display-4"
+                      ><i class="fas fa-box-open text-warning"></i> 700</span
+                    >
+                    <hr />
+                    <h4 class="text-warning">Products Sold</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="row pt-4">
+                  <h4 class="text-secondary">Recent Transaction</h4>
+                  <table class="table table-striped col-lg-12 col-12">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Creditor Name</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total Credit</th>
+                        <th scope="col">Dated</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>John Does</td>
+                        <td>Grocery</td>
+                        <td>2</td>
+                        <td>505</td>
+                        <td>2076/04/17</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jane Did</td>
+                        <td>Grocery</td>
+                        <td>2</td>
+                        <td>505</td>
+                        <td>2076/04/17</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><strong>Shaun</strong> Doing</td>
+                        <td>Grocery</td>
+                        <td>2</td>
+                        <td>505</td>
+                        <td>2076/04/17</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td><strong>The</strong> Done</td>
+                        <td>Grocery</td>
+                        <td>2</td>
+                        <td>505</td>
+                        <td>2076/04/17</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td><strong>Sheep</strong> Do</td>
+                        <td>Grocery</td>
+                        <td>2</td>
+                        <td>505</td>
+                        <td>2076/04/17</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tabContent" id="Customers">
+            This is customers tab!
+          </div>
+          <div class="tabContent" id="Sales">
+            This is sales tab!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
