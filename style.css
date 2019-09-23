@@ -3,48 +3,39 @@
 }
 body {
   background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 nav {
-  border-radius: 0 0 1.5rem 0;
+  border-radius: 0 0 2rem 0;
   display: inline;
+}
+.navbar {
+  font-size: 3rem;
+  color: white;
+  background-color: #343a40;
+  box-sizing: border-box;
+}
+.brand {
+  color: white;
+  font-family: "Economica", sans-serif;
+}
+.logout {
+  font-family: "Economica", sans-serif;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.logout:hover {
+  color: rgb(196, 53, 53) !important;
 }
 .container-fluid {
   position: relative;
   padding: 0%;
 }
-
-.dropbtn {
-  color: white;
-  padding: 5px;
-  border: none;
-  cursor: pointer;
-}
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: gray;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
 .show {
-  display: block;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
   display: block;
 }
 .wrapper {
@@ -54,12 +45,16 @@ nav {
   background-color: #343a40;
 }
 .sideMenu {
-  position: sticky;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   width: 200px;
+}
+.userDetail {
+  color: whitesmoke;
+  font-family: "Economica", sans-serif;
 }
 .sideMenuIcon {
   font-size: 2rem;
@@ -71,10 +66,9 @@ nav {
   margin-left: 1rem;
   font-size: 1rem;
 }
-.profile-container {
-  padding: 1rem;
-}
-
+/* .profile-container {
+  padding: 0.5rem;
+} */
 img.img-circle {
   width: 5rem;
   height: 5rem;
@@ -91,6 +85,7 @@ img.img-circle {
 .navbar-nav {
   width: 100%;
 }
+
 .nav-link {
   color: white;
   margin-left: 1rem;
@@ -98,7 +93,10 @@ img.img-circle {
 
 .active {
   background-color: gray;
-  border-right: 4px solid white;
+  border-right: 0.3rem solid white;
+  /* border-top: 10px solid transparent;
+  border-right: 5px solid white;
+  border-bottom: 10px solid transparent; */
 }
 .nav-item:hover {
   background-color: gray;
@@ -113,7 +111,7 @@ img.img-circle {
   width: 100%;
   overflow-y: scroll;
   background-color: white;
-  border-radius: 1.5rem 0 0 0;
+  border-radius: 2rem 0 0 0;
 }
 .customCard {
   height: 100%;
@@ -122,9 +120,9 @@ img.img-circle {
   box-shadow: 2px 7px 15px -3px gray;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .sideMenu {
-    width: 4rem;
+    width: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

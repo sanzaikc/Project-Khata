@@ -6,30 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css" />
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Economica|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Dashboard</title>
   </head>
   <body>
     <div class="container-fluid">
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand " href="#"
-          ><h1 pl-2">
-            <i class="far fa-address-book">
-              Khata<sup><small>&trade;</small></sup>
-            </i>
-          </h1></a>
-        <!-- DropDown -->
-        <!-- <div class="nav-item dropdown">
-          <p onclick="myFunction()" class="dropbtn">Welcome! John Doe</p>
-          <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-          </div>
-      </div> -->
+      <nav class="navbar">
+        <a href="#">
+          <i class="far fa-address-book ">
+            <span class="brand">Khata</span>
+          </i>
+        </a>
+        <!-- Welcome user -->
+        <div class="logout">
+          <span>Logout </span><i class="fas fa-sign-out-alt"></i>
+        </div>
       </nav>
-
       <!-- After NavBar, Remaining Body -->
       <div class="wrapper d-flex col-10.mx-auto col-lg-12">
         <div class="sideMenu ">
@@ -44,15 +41,24 @@
             </div>
             <!-- <div class="userName">Sanjay Khatri</div> -->
           </div>
+          <!-- User Detail -->
+          <div class="userDetail">
+            Shaun the Sheep
+          </div>
+          <br />
           <!-- Navigation Items -->
           <ul class="navbar-nav">
-            <li class="nav-item" id="defaultOpen"  onclick="openTab(event,'DashBoard')">
+            <li
+              class="nav-item"
+              id="defaultOpen"
+              onclick="openTab(event,'DashBoard')"
+            >
               <a href="" class="nav-link "
                 ><i class="fas fa-tachometer-alt sideMenuIcon"></i
                 ><span class="text">Dashboard</span></a
               >
             </li>
-            <li class="nav-item"  onclick="openTab(event,'Customers')">
+            <li class="nav-item" onclick="openTab(event,'Customers')">
               <a href="" class="nav-link"
                 ><i class="fas fa-user sideMenuIcon"></i
                 ><span class="text">Customers</span></a
@@ -70,12 +76,12 @@
         <!-- Main Contents lies here -->
         <div class="mainContent">
           <!-- Content for DashBoard -->
-          <div class="tabContent" id='DashBoard'>
+          <div class="tabContent" id="DashBoard">
             <h4 class="text-secondary">Overview</h4>
             <hr />
             <div class="col-lg-12  pt-2">
               <div class="row pt-4">
-                <div class="col-lg-4 col-12  mb-3">
+                <div class="col-lg-4 col-12  mb-3 mx-auto col-md-9">
                   <div class="customCard text-center">
                     <span class="display-4"
                       ><i class="fas fa-users text-info"></i> 15</span
@@ -84,7 +90,7 @@
                     <h4 class="text-info">Total Customers</h4>
                   </div>
                 </div>
-                <div class="col-lg-4 col-12  mb-3">
+                <div class="col-lg-4 col-12  mb-3 mx-auto col-md-9">
                   <div class="customCard text-center">
                     <span class="display-4"
                       ><i class="fas fa-dollar-sign text-success"></i>
@@ -95,7 +101,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-12  mb-3">
+                <div class="col-lg-4 col-12  mb-3 mx-auto col-md-9">
                   <div class=" customCard text-center">
                     <span class="display-4"
                       ><i class="fas fa-box-open text-warning"></i> 700</span
@@ -106,10 +112,10 @@
                 </div>
               </div>
 
-              <div class="col-lg-12">
+              <div class="col-lg-12 ">
                 <div class="row pt-4">
                   <h4 class="text-secondary">Recent Transaction</h4>
-                  <table class="table table-striped col-lg-12 col-12">
+                  <table class="table table-striped col-lg-12 col-12 ">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">#</th>
@@ -167,11 +173,15 @@
               </div>
             </div>
           </div>
-  
+
           <div class="tabContent" id="Customers">
+            <h4 class="text-secondary">Customer List</h4>
+            <hr />
             This is customers tab!
           </div>
           <div class="tabContent" id="Sales">
+            <h4 class="text-seconday">Sales</h4>
+            <hr />
             This is sales tab!
           </div>
         </div>
