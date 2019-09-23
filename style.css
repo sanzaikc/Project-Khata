@@ -16,8 +16,9 @@ nav {
 .navbar {
   font-size: 3rem;
   color: white;
-  background-color: #343a40;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
   box-sizing: border-box;
+  padding: 0 0 0 1rem;
 }
 .brand {
   color: white;
@@ -27,6 +28,7 @@ nav {
   font-family: "Economica", sans-serif;
   font-size: 1.2rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .logout:hover {
   color: rgb(196, 53, 53) !important;
@@ -42,10 +44,9 @@ nav {
   padding: 0%;
   margin: 0%;
   height: 100vh;
-  background-color: #343a40;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
 }
 .sideMenu {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +55,7 @@ nav {
 }
 .userDetail {
   color: whitesmoke;
+  text-align: center;
   font-family: "Economica", sans-serif;
 }
 .sideMenuIcon {
@@ -66,40 +68,31 @@ nav {
   margin-left: 1rem;
   font-size: 1rem;
 }
-/* .profile-container {
-  padding: 0.5rem;
-} */
-img.img-circle {
-  width: 5rem;
-  height: 5rem;
+.img-circle {
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 2px solid gray;
   background-color: white;
-  overflow: hidden;
 }
 .badgeContainer {
   font-size: 0.8rem;
   margin-top: -20%;
-  margin-left: 26%;
+  margin-left: 25%;
 }
 .navbar-nav {
   width: 100%;
 }
-
 .nav-link {
   color: white;
   margin-left: 1rem;
 }
-
 .active {
-  background-color: gray;
+  background-color: rgba(121, 133, 145, 0.582);
   border-right: 0.3rem solid white;
-  /* border-top: 10px solid transparent;
-  border-right: 5px solid white;
-  border-bottom: 10px solid transparent; */
 }
 .nav-item:hover {
-  background-color: gray;
+  background-color: rgba(121, 133, 145, 0.582);
 }
 .nav-link:hover {
   color: white;
@@ -118,6 +111,10 @@ img.img-circle {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 2px 7px 15px -3px gray;
+  transition: all 0.2s ease-in-out;
+}
+.customCard:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
